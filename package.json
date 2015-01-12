@@ -5,7 +5,7 @@
   "readme" : "README.md",
   "repository" : {
     "type" : "git",
-    "url" : "git@github.com:fnc314/hairetcpittsburgh.git"
+    "url" : "https://github.com/fnc314/hairetcpittsburgh.git"
   },
   "devDependencies" : {
     "bower" : "^1.3.1",
