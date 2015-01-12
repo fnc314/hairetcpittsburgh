@@ -1,0 +1,41 @@
+{
+  "address" : {
+    "street" : "244 Crafton Ingram Shopping Center",
+    "city" : "Pittsburgh",
+    "state" : "PA",
+    "zip" : "15205",
+    "gMapsURL" : "https://maps.google.com/?q=244+Crafton+Ingram+Shopping+Center+Pittsburgh+PA+15205"
+  },
+
+  "phone" : {
+    "display" : "412-921-HAIR (4247)",
+    "linkURL" : "tel:+14129214247"
+  },
+
+  "schedule" : [
+    {
+      "day" : "Monday",
+      "hours" : "10am - 8pm"
+    },
+    {
+      "day" : "Tuesday",
+      "hours" : "10am - 6pm"
+    },
+    {
+      "day" : "Wednesday",
+      "hours" : "10am - 6pm"
+    },
+    {
+      "day" : "Thursday",
+      "hours" : "10am - 8pm"
+    },
+    {
+      "day" : "Friday",
+      "hours" : "10am - 6pm"
+    },
+    {
+      "day" : "Saturday",
+      "hours" : "9am - 4pm"
+    }
+  ]
+}

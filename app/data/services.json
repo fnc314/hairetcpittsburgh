@@ -1,0 +1,185 @@
+[
+  {
+    "group" : "Special/Corrective Coloring",
+    "services" : [
+      {
+        "name" : "Basic Touch Up (With Eyebrows)",
+        "price" : "45.00 And Up"
+      },
+      {
+        "name" : "Full Color (With Eyebrows)",
+        "price" : "55.00 And Up"
+      },
+      {
+        "name" : "Brow Color",
+        "price" : "15.00"
+      },
+      {
+        "name" : "Hilites/Lowlites (Cap)",
+        "price" : "55.00 And Up"
+      },
+      {
+        "name" : "Hilites/Lowlites (Foils)",
+        "price" : "45.00 And Up"
+      },
+      {
+        "name" : "Men (With Eyebrows/Mustache)",
+        "price" : "35.00 And Up"
+      },
+      {
+        "name" : "Ombre Products",
+        "price" : "Free Consultation/Quote"
+      },
+      {
+        "name" : "Balayage Products",
+        "price" : "Free Consultation/Quote"
+      },
+      {
+        "name" : "Hilites/Lowlites (Per Foil)",
+        "price" : "4.00 And Up"
+      },
+      {
+        "name" : "Fantasy Color (Per Foil)",
+        "price" : "Free Consultation/Quote"
+      },
+      {
+        "name" : "Specialty/Corrective Color",
+        "price" : "Free Consultation/Quote"
+      },
+      {
+        "name" : "Fantasy Color",
+        "price" : "Free Consultation/Quote"
+      },
+      {
+        "name" : "Service Combination",
+        "price" : "Free Consultation/Quote"
+      }
+    ]
+  },
+  {
+    "group" : "Brazilian Blowout",
+    "services" : [
+      {
+        "name" : "The Original Brazilian Blowout",
+        "price" : "250.00 And Up"
+      }
+    ]
+  },
+  {
+    "group" : "Extensions",
+    "services" : [
+      {
+        "name" : "Babe Hair Extensions",
+        "price" : "Free Consultation/Quote"
+      },
+      {
+        "name" : "Eyelashes",
+        "price" : "Free Consultation/Quote"
+      }
+    ]
+  },
+  {
+    "group" : "Wax",
+    "services" : [
+      {
+        "name" : "Eyebrows",
+        "price" : "10.00"
+      },
+      {
+        "name" : "Upper Lip",
+        "price" : "9.00"
+      },
+      {
+        "name" : "Chin",
+        "price" : "10.00"
+      },
+      {
+        "name" : "Eyebrows, Upper Lip, & Chin (At Same Visit)",
+        "price" : "25.00"
+      },
+      {
+        "name" : "Brow Color & Wax",
+        "price" : "20.00"
+      }
+    ]
+  },
+  {
+    "group" : "Updo/Hair Treatment",
+    "services" : [
+      {
+        "name" : "Updo",
+        "price" : "35.00 And Up"
+      },
+      {
+        "name" : "Blowdry/Flat Iron",
+        "price" : "30.00 And Up"
+      },
+      {
+        "name" : "Deep Conditioning/Cleansing",
+        "price" : "20.00 And Up"
+      },
+      {
+        "name" : "Blowdry (Curling Iron/Rollers)",
+        "price" : "17.00 And Up"
+      },
+      {
+        "name" : "French Braid (Or Similiar)",
+        "price" : "17.00 And Up"
+      }
+    ]
+  },
+  {
+    "group" : "Perms (Tressa Brand)",
+    "services" : [
+      {
+        "name" : "Specialty",
+        "price" : "Free Consultation/Quote"
+      },
+      {
+        "name" : "Whole Head (Woman)",
+        "price" : "53.00 And Up"
+      },
+      {
+        "name" : "Partial (Woman)",
+        "price" : "42.00 And Up"
+      },
+      {
+        "name" : "Men",
+        "price" : "45.00 And Up"
+      }
+    ]
+  },
+  {
+    "group" : "Haircuts",
+    "services" : [
+      {
+        "name" : "Wash And Cut Only (Woman)",
+        "price" : "18.00 And Up"
+      },
+      {
+        "name" : "Wash, Cut, And Blowdry/Roller Set (Woman)",
+        "price" : "28.00 And Up"
+      },
+      {
+        "name" : "Wash And Cut Only (Girl; 11 y/o And Younger)",
+        "price" : "15.00 And Up"
+      },
+      {
+        "name" : "Wash, Cut, And Blowdry (Men)",
+        "price" : "15.00"
+      },
+      {
+        "name" : "Buzz",
+        "price" : "13.00"
+      },
+      {
+        "name" : "Haircut (Boy; 9 y/o And Younger)",
+        "price" : "10.00"
+      },
+      {
+        "name" : "Haircut (Children; 4 y/o And Younger)",
+        "price" : "Free Consultation/Quote"
+      }
+    ]
+  }
+]
