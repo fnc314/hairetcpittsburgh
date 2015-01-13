@@ -5,11 +5,12 @@
 
 // require statements pulling in each module's JS file
 require('modules/photos/photos');
+require('modules/navigation/navigation');
 
 // array of dependencies
 var dependencyArray = [
   // Each module name goes here
-  'photos'
+  'photos', 'navigation'
 ];
 
 // Declaration of application via name and adding config of routes and config of global urls available (like URIConfig)
