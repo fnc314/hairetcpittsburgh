@@ -18,13 +18,15 @@ module.exports = function(config) {
       'bower_components/jquery/dist/jquery.js',
       'bower_components/angular/angular.js',
       'bower_components/angular-route/angular-route.js',
-      'bower_components/angular-resource/angular-resource.js'
+      'bower_components/angular-resource/angular-resource.js',
+      'app/app.js',
+      'modules/*/*_test.js'
     ],
 
 
     // list of files to exclude
     exclude: [
-        
+
     ],
 
 
