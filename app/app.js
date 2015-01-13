@@ -13,6 +13,7 @@ var dependencyArray = [
 ];
 
 // Declaration of application via name and adding config of routes and config of global urls available (like URIConfig)
-var HairEtcPittsburgh = angular.module('HairEtcPittsburgh', dependencyArray)
-  // .config(require(app/config/route.js))
-  // .constant('UriConfig', require(app/config/uri))
+var HairEtcPittsburgh = angular.module('HairEtcPittsburgh', dependencyArray);
+
+// HairEtcPittsburgh.config(require('app/config/route'));
+// HairEtcPittsburgh.config('UriConfig', require('app/config/uri'));
