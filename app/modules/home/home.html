@@ -1,0 +1,65 @@
+<div class="row">
+
+  <div class="col-xs-offset-2 col-xs-8">
+
+    <img class="img-responsive" src="images/logo.png"></img>
+
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-xs-offset-2 col-xs-8 text-center">
+
+    <a ng-href="{{addrSched.phone.linkURL}}" target="_blank">
+      <span class="glyphicon glyphicon-phone"></span>
+      {{addrSched.phone.display}}
+    </a>
+
+    <br>
+
+    <a ng-href="{{addrSched.address.gMapsURL}}" target="_blank">
+      <span class="glyphicon glyphicon-map-marker"></span>
+      {{addrSched.address.street}} <br>
+      {{addrSched.address.city}}, {{addrSched.address.state}} {{addrSched.address.zip}}
+    </a>
+
+    <div class="table-responsive">
+      <table class="table table-condensed">
+        <tbody>
+          <tr ng-repeat="day in addrSched.schedule">
+            <td><strong>{{day.day}}</strong></td>
+            <td>{{day.hours}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Picture slide show -->
+<!-- <div class="col-md-12">
+
+  <carousel interval="myInterval">
+
+    <slide ng-repeat="slide in slides" active="slide.active">
+
+      <img ng-src="{{slide.url}}">
+
+        <div class="carousel-caption">
+
+          <p>Slide {{$index + 1}}</p>
+
+          <p>{{slide.caption}}</p>
+
+        </div> 
+
+    </slide>
+
+  </carousel>
+
+
+</div> -->

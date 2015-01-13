@@ -1,0 +1,18 @@
+<!-- Row -->
+<div class="row">
+  
+  <!-- Repeated div of columns -->
+  <div class="col-xs-6 col-md-3" ng-repeat="photo in workSamplePhotos.photoUrls">
+    
+    <!-- Link to full size image (separate tab) -->
+    <a target="_blank" href="{{photo}}" class="thumbnail">
+      
+      <!-- Image -->
+      <img ng-src="{{photo}}" class="img-responsive" alt="{{photo}}">
+    
+    </a>
+  
+  </div>
+
+</div>
+

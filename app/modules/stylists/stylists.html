@@ -1,0 +1,79 @@
+<div class="row">
+
+  <div class="col-sm-12">
+
+    <img class="img img-responsive" src="images/Group02.png"></img>
+
+  </div>
+
+</div>
+
+<!-- REPEATED STYLIST ROWS -->
+<div class="row" ng-repeat="stylist in stylists">
+
+  <!-- Stats -->
+  <div class="col-xs-8">
+
+    <h2 class="text-center">
+      {{stylist.first_name}}
+    </h2>
+
+    <!-- Specialties -->
+    <ul class="list-inline">
+    
+      <li>
+        <h4>
+          Specialties:
+        </h4>
+      </li>
+    
+      <li ng-repeat="service in stylist.specialties">
+        <span>
+          <strong>
+            > {{service}} <
+          </strong>
+        </span>
+      </li>
+
+    </ul>
+
+    <!-- Schedule -->
+    <ul class="list-inline">
+   
+      <li>
+        <h4>
+          Days Available:
+        </h4>
+      </li>
+
+      <li ng-repeat="day in stylist.schedule">
+        <span>
+          <strong>
+            < {{day}} >
+          </strong>
+        </span>
+      </li>
+
+    </ul>
+
+    <!-- Tag Line -->
+    <p id="stylistTagLine">
+      <i>
+        "{{stylist.tag_line}}"
+      </i>
+    </p>
+
+  </div>
+
+  <!-- Picture -->
+  <div class="col-xs-4">
+
+    <div class="thumbnail">
+    
+      <img class="img img-responsive" src="{{stylist.profile_pic}}">
+    
+    </div>
+  
+  </div>
+
+</div>

@@ -1,0 +1,68 @@
+<div class="row">
+
+  <div class="col-xs-offset-1 col-xs-10">
+
+    <div class="alert alert-danger alert-dismissible" roll="alert">
+      
+      <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+        <span class="sr-only">Close</span>
+      </button>
+
+      <p class="text-center">
+
+        Free Consultations!  Call today!
+
+      </p>
+
+      <p class="text-center">
+
+        <a href="tel:+14129214247">
+
+          <span class="glyphicon glyphicon-phone"></span> 412-921-HAIR (4247)
+
+        </a>
+
+      </p>
+      
+      <p class="text-center">
+        
+        Gift Certificates Available!
+      
+      </p>
+    
+    </div>
+    
+    <accordion close-others="oneAtATime">
+      
+      <accordion-group ng-repeat="serviceGroup in serviceData" heading="{{serviceGroup.group}}">
+        
+        <div class="row text-center" ng-repeat="service in serviceGroup.services"> 
+          
+          <div class="col-md-6">
+          
+            <p>
+              <strong>{{service.name}}</strong>
+            </p>
+
+          </div>
+          
+          <div class="col-md-6">
+          
+            <p>
+              <span class="glyphicon glyphicon-usd"></span>
+              {{service.price}}
+              <!-- <span class="glyphicon glyphicon-plus"></span> -->
+            </p>
+
+          </div>
+
+        </div>
+
+      </accordion-group>
+
+    </accordion>
+
+  </div> <!-- COLUMNS -->
+
+</div>
