@@ -15,6 +15,7 @@
     "angular": "angular/bower-angular#v1.3.8",
     "angular-mocks": "angular/bower-angular-mocks#v1.3.8",
     "angular-route" : "angular/bower-angular-route#v1.3.8",
+    "angular-resource" : "angular/bower-angular-resource#v1.3.8",
     "bootstrap/angular-bootstrap" : "angular-ui/bootstrap-bower#0.12.0",
     "bootstrap/bootstrap": "twbs/bootstrap#v3.2.0"
   },
