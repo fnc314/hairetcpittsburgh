@@ -1,5 +1,13 @@
 'use strict';
 
-angular.exports = angular.module('photos', [])
-  .controller('PhotosController', require('./photos-controller'))
-  .template(PHOTOS_TEMPLATE, require('./photos.html'));
+// Define
+var photos = angular.module('photos', []);
+
+// Controller
+photos.controller('PhotosController', require('./photos-controller'));
+
+// HTML View
+photos.constant('PHOTOS_TEMPLATE', require('./photos.html'));
+
+// Export
+module.exports = photos;

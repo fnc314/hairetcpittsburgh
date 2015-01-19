@@ -20,7 +20,7 @@ var autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync'),
     browserify = require('browserify'),
     watchify = require('watchify'),
-    
+    del = require('del');
 
 
 
