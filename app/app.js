@@ -2,9 +2,12 @@
 
 // General require statments
 require('jquery-browserify');
+
 require('angular/angular');
 require('angular-route/angular-route');
 require('angular-resource/angular-resource');
+
+require('bootstrap/dist/js/bootstrap'); // Necessary?
 require('bootstrap/angular-bootstrap/ui-bootstrap');
 require('bootstrap/angular-bootstrap/ui-bootstrap-tpls');
 
