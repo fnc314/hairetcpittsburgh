@@ -7,7 +7,7 @@ var aboutUs = angular.module('about-us', []);
 aboutUs.controller('AboutUsController', require('./about-us-controller'));
 
 // HTML View
-aboutUs.constant('ABOUT-US_TEMPLATE', require('./about-us.html'));
+aboutUs.constant('ABOUT_US_TEMPLATE', require('./about-us.html'));
 
 // Export
 module.exports = aboutUs;

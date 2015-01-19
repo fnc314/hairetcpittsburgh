@@ -1,33 +1,41 @@
 'use strict';
 
-module.exports = ['$routeProvider', function ($routeProvider) {
+module.exports = [
+  '$routeProvider',
+  'HOME_TEMPLATE',
+  'STYLISTS_TEMPLATE',
+  'OFFERINGS_TEMPLATE',
+  'CONTACT_US_TEMPLATE',
+  'PHOTOS_TEMPLATE',
+  'ABOUT_US_TEMPLATE',
+  function ($routeProvider, HOME_TEMPLATE, STYLISTS_TEMPLATE, OFFERINGS_TEMPLATE, CONTACT_US_TEMPLATE, PHOTOS_TEMPLATE, ABOUT_US_TEMPLATE) {
   $routeProvider
-    .otherwise({
-      redirectTo: '/home'
-    })
     .when('/home', {
-      templateUrl: 'modules/home/home.html',
+      template: HOME_TEMPLATE,
       controller: 'HomeController as homeCtrl'
     })
     .when('/stylists', {
-      templateUrl: 'modules/stylists/stylists.html',
+      template: STYLISTS_TEMPLATE,
       controller: 'StylistController as stylistCtrl'
     })
     .when('/offerings', {
-      templateUrl: 'modules/offerings/offerings.html',
+      template: OFFERINGS_TEMPLATE,
       controller: 'OfferingsController as offeringCtrl'
     })
     .when('/contact-us', {
-      templateUrl: 'modules/contact-us/contact-us.html',
+      template: CONTACT_US_TEMPLATE,
       controller: 'ContactUsController as contactUsCtrl'
     })
     .when('/photos', {
-      templateUrl: 'modules/photos/photos.html',
+      template: PHOTOS_TEMPLATE,
       controller: 'PhotosController as photoCtrl',
     })
     .when('/about-us', {
-      templateUrl: 'modules/about-us/about-us.html',
+      template: ABOUT_US_TEMPLATE,
       controller: 'AboutUsController as aboutUsCtrl'
     })
+    .otherwise({
+      redirectTo: '/home'
+    });
 
 }];

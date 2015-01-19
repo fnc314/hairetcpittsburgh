@@ -7,7 +7,7 @@ var contactUs = angular.module('contact-us', []);
 contactUs.controller('ContactUsController', require('./contactu-us-controller'));
 
 // HTML View
-contactUs.constant('CONTACT-US_TEMPLATE', require('./contact-us.html'));
+contactUs.constant('CONTACT_US_TEMPLATE', require('./contact-us.html'));
 
 // Export
 module.exports = contactUs;

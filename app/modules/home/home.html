@@ -12,23 +12,23 @@
 
   <div class="col-xs-offset-2 col-xs-8 text-center">
 
-    <a ng-href="{{addrSched.phone.linkURL}}" target="_blank">
+    <a ng-href="{{homeCtrl.addrSched.phone.linkURL}}" target="_blank">
       <span class="glyphicon glyphicon-phone"></span>
-      {{addrSched.phone.display}}
+      {{homeCtrl.addrSched.phone.display}}
     </a>
 
     <br>
 
-    <a ng-href="{{addrSched.address.gMapsURL}}" target="_blank">
+    <a ng-href="{{homeCtrl.addrSched.address.gMapsURL}}" target="_blank">
       <span class="glyphicon glyphicon-map-marker"></span>
-      {{addrSched.address.street}} <br>
-      {{addrSched.address.city}}, {{addrSched.address.state}} {{addrSched.address.zip}}
+      {{homeCtrl.addrSched.address.street}} <br>
+      {{homeCtrl.addrSched.address.city}}, {{homeCtrl.addrSched.address.state}} {{homeCtrl.addrSched.address.zip}}
     </a>
 
     <div class="table-responsive">
       <table class="table table-condensed">
         <tbody>
-          <tr ng-repeat="day in addrSched.schedule">
+          <tr ng-repeat="day in homeCtrl.addrSched.schedule">
             <td><strong>{{day.day}}</strong></td>
             <td>{{day.hours}}</td>
           </tr>

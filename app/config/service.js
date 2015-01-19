@@ -4,9 +4,15 @@ var ApiService = function ($q, $http, UriConfig) {
 
   var apiServce = this;
 
-  apiService.getLocalData = function (fileName) {
+  // `page` is either 'home' or 'offering' to determine which UriConfig route to use
+  apiService.getLocalData = function (page) {
+    if ( page === 'home' ) {
+      var route = UriConfig.LOCAL_DATA.HOME;
+    }
+    if ( page === 'offerings' ) {
+      var route = UriConfig.LOCAL_DATA.OFFERINGS;
+    }
     var deferred = $q.defer();
-    var route = 'data/' + fileName + '.json';
     $http.get(route)
       .success(
         function (response) {
@@ -21,7 +27,7 @@ var ApiService = function ($q, $http, UriConfig) {
         }
       );
     return deferred.promise;
-  }
+  };
 
   apiService.submitContactUs = function (contactForm, dateObj) {
     var route = 'http://localhost:3000/api/website/mailer.json'; // find in UriConfig
