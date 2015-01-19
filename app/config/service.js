@@ -1,11 +1,10 @@
 'use strict';
 
-var RailsApiService = function ($q, $http, UriConfig) {
+var ApiService = function ($q, $http, UriConfig) {
 
-  var railsApiServce = this;
+  var apiServce = this;
 
-  // Doesn't belong here, doesn't use Rails
-  railsApiService.getLocalData = function (fileName) {
+  apiService.getLocalData = function (fileName) {
     var deferred = $q.defer();
     var route = 'data/' + fileName + '.json';
     $http.get(route)
@@ -24,7 +23,7 @@ var RailsApiService = function ($q, $http, UriConfig) {
     return deferred.promise;
   }
 
-  railsApiService.submitContactUs = function (contactForm, dateObj) {
+  apiService.submitContactUs = function (contactForm, dateObj) {
     var route = 'http://localhost:3000/api/website/mailer.json'; // find in UriConfig
     $http({
       method: 'POST',
@@ -41,7 +40,7 @@ var RailsApiService = function ($q, $http, UriConfig) {
   }
 }
 
-module.exports = ['$q', '$http', 'UriConfig', RailsApiService];
+module.exports = ['$q', '$http', 'UriConfig', ApiService];
 
 // Some sort of export statement
 // Include URI config

@@ -18,4 +18,4 @@ var HairEtcPittsburgh = angular.module('HairEtcPittsburgh', dependencyArray);
 
 // HairEtcPittsburgh.config(require('app/config/route'));
 // HairEtcPittsburgh.config('UriConfig', require('app/config/uri'));
-// HairEtcPittsburgh.service('RailsApiService', require('app/config/rails-api-service'));
+// HairEtcPittsburgh.service('ApiService', require('app/config/service'));
