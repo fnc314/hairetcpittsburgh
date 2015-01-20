@@ -1,5 +1,6 @@
 // Include gulp
 var gulp = require('gulp');
+var config = {};
 
 // Include plugins
 var autoprefixer = require('gulp-autoprefixer'),
@@ -30,7 +31,7 @@ var devUglifyOptions = { mangle: false, compress: false, output: { beautify: tru
 // Paths
 var paths = {
   src: './app',
-  dest_prod_js: './dist/prod/HairEtcPittsburgh/js',
+  dest_prod_js: './dist/prod/HairEtcPittsburgh/js/',
   dest_dev_js: './dist/dev',
   img: '/img',
   css: '/css'
