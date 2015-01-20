@@ -47,7 +47,7 @@
     "browserify": "^8.0.0",
     "browser-sync" : "1.9.x",
     "del" : "1.1.x",
-    "http-server": "^0.7.4",
+    "http-server": "0.7.x",
     "jshint" : "2.5.x",
     "jshint-stylish" : "1.0.x",
     "jquery-browserify" : "1.8.x",
