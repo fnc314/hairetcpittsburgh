@@ -51,6 +51,7 @@
     "jshint" : "2.5.x",
     "jshint-stylish" : "1.0.x",
     "jquery-browserify" : "1.8.x",
+    "lodash" : "2.4.x",
     "partialify" : "3.1.x",
     "require-dir" : "0.1.x",
     "shelljs": "^0.2.6",
@@ -61,7 +62,7 @@
   "scripts": {
     "postinstall": "napa",
     "prestart": "npm install",
-    "start": "http-server -a localhost -p 8000",
+    "start": "http-server -a localhost -p 8080",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "protractor": "protractor test/protractor-conf.js",

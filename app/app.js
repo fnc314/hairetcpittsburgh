@@ -1,5 +1,8 @@
 'use strict';
 
+// Lodash
+var _ = require('lodash');
+
 // General require statments
 require('jquery-browserify');
 

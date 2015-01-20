@@ -2,6 +2,7 @@
 <html>
   
   <head lang="en">
+    
     <title>Hair Etc...</title>
     
     <!-- META Tags -->
@@ -12,7 +13,18 @@
     <!-- Logo icon -->
     <link rel="icon" href="images/logo.png" type="image/png">
 
-    <link type="text/css" rel="stylesheet" href="css/app.css">
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="../node_modules/bootstrap/bootstrap/dist/css/bootstrap.css">
+    <!-- <link type="text/css" rel="stylesheet" href="css/app.css"> -->
+  
+    <script src="config/require.js"></script>
+    <script src="../node_modules/lodash/lodash.js"></script>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-resource/angular-resource.js"></script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+    <script src="../node_modules/bootstrap/angular-bootstrap/ui-bootstrap.js"></script>
+    <!-- <script src="../node_modules/bootstrap/bootstrap/dist/js/bootstrap.js"></script> -->
+    <script src="app.js"></script>
   </head>
   
   <body ng-app="HairEtcPittsburgh">
@@ -20,6 +32,9 @@
     <div ng-include="'modules/navigation/header.html'"></div>
     
     <div class="container-fluid body" id="angularView" ng-view></div>
+
+    <!-- Browserify Bundle -->
+    <!-- <script src="bundle.js"></script> -->
 
   </body>
   

@@ -5,36 +5,36 @@
     <h3 class="text-center">Contact Us!</h3>
     <h5 class="text-center">We're Anxious To Hear From You</h5>
 
-    <div ng-class="result">
+    <div ng-class="contactUsCtrl.result">
       <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-      <p id="resultMessageParagraph">{{resultMessage}}</p>
-    </div> 
+      <p id="resultMessageParagraph">{{contactUsCtrl.resultMessage}}</p>
+    </div>
 
-    <form ng-submit="submit(contactForm)" name="contactForm" method="post" action="" class="" role="form">
+    <form ng-submit="submit(formData)" ng-model="formData" role="form">
       
       <!-- Visitor Name -->
-      <div class="form-group" ng-class="{ 'has-error': contactForm.inputName.$invalid && submitted }">
+      <div class="form-group" ng-class="{ 'has-error': contactUsCtrl.formData.inputName.$invalid && submitted }">
         <label for="inputName">Name</label>
         <input ng-model="formData.inputName" type="text" class="form-control" id="inputName" name="inputName" placeholder="Enter Your Name" required>
-      </div> 
+      </div>
       <!-- Visitor Name -->
 
       <!-- Visitor Email -->
-      <div class="form-group" ng-class="{ 'has-error': contactForm.inputEmail.$invalid && submitted }">
+      <div class="form-group" ng-class="{ 'has-error': contactUsCtrl.formData.inputEmail.$invalid && submitted }">
         <label for="inputEmail" class="control-label">Email Address</label>
         <input ng-model="formData.inputEmail" type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Enter Your Email" required>
-      </div> 
+      </div>
       <!-- Visitor Email -->
       
       <!-- Visitor Email Subject -->
-      <div class="form-group" ng-class="{ 'has-error': contactForm.inputSubject.$invalid && submitted }">
+      <div class="form-group" ng-class="{ 'has-error': contactUsCtrl.formData.inputSubject.$invalid && submitted }">
         <label for="inputSubject" class="control-label">Subject</label>
         <input ng-model="formData.inputSubject" type="text" class="form-control" id="inputSubject" name="inputSubject" placeholder="Message Subject" required>
       </div>
       <!-- Visitor Email Subject -->
 
       <!-- Message Body -->
-      <div class="form-group" ng-class="{ 'has-error': contactForm.inputMessage.$invalid && submitted }">
+      <div class="form-group" ng-class="{ 'has-error': contactUsCtrl.formData.inputMessage.$invalid && submitted }">
         <label for="inputMessage" class="control-label">Message</label>
         <textarea ng-model="formData.inputMessage" class="form-control" row="5" id="inputMessage" name="inputMessage" placeholder="Tell us what you want us to know..." required></textarea>
       </div>
@@ -42,7 +42,7 @@
 
       <!-- Submit Button -->
       <div class="form-group">
-        <button type="submit" class="btn btn-lg btn-success btn-block" ng-disabled="submitButtonDisabled">SEND!</button>
+        <button type="submit" class="btn btn-lg btn-success btn-block" ng-disabled="contactUsCtrl.submitButtonDisabled">SEND!</button>
       </div>
       <!-- Submit Button -->
 
